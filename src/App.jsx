@@ -8,6 +8,7 @@ import F404Page from "./F404Page";
 import Unauthorized from "./Unauthorized";
 import useScrollToTop from "./components/useScrollToTop";
 import HomePage from "./pages/HomePage";
+import InvoiceReceipt from "./pages/InvoiceReceipt";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route element={<PersistLogin />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/*" element={<F404Page />} />
+            <Route path="/invoice" element={<InvoiceReceipt />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
           </Route>
         </Routes>
